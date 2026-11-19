@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Blanco (@Criyer) · Portfolio de Diseño de Interfaces Web</title>
+  <meta name="description" content="Portfolio personal de Cristian Blanco (Criyer). Diseño de interfaces web, desarrollo front-end responsive, proyectos del ciclo y documento de diseño.">
+  <meta name="author" content="Cristian Blanco">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cristian Blanco (@Criyer) · Diseño de Interfaces Web">
+  <meta property="og:description" content="Interfaces limpias, accesibles y adaptables. Descubre mis proyectos del ciclo, un nuevo proyecto web y el documento de diseño.">
+  <meta property="og:url" content="https://Criyer.github.io/">
+  <meta property="og:image" content="https://Criyer.github.io/img/og-portfolio.svg">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable position-fixed top-0 start-0 m-2 btn btn-accent" style="z-index: 2000;" href="#contenido-principal">
+    Saltar al contenido principal
+  </a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top portfolio-navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+          <span class="font-mono-code accent-text">&lt;CB /&gt;</span>
+          <span>Cristian Blanco</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir o cerrar menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 my-3 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link font-mono-code" href="diseno.html">Documento de diseño</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button id="themeToggle" type="button" class="btn btn-sm btn-outline-custom d-inline-flex align-items-center gap-1" aria-pressed="false" aria-label="Cambiar entre modo oscuro y modo claro">
+                <span id="themeToggleIcon" aria-hidden="true">☀️</span>
+                <span id="themeToggleLabel">Modo claro</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8">
+            <p class="font-mono-code accent-text small mb-2">@Criyer · Diseño de Interfaces Web</p>
+            <h1 class="hero-title mb-3">
+              Hola, soy <span class="accent-text">Cristian Blanco</span>. Construyo interfaces web claras, rápidas y adaptables.
+            </h1>
+            <p class="lead-custom mb-4">
+              Estudiante de desarrollo web centrado en el diseño de interfaces, la maquetación responsive y la experiencia de usuario. Aquí reúno mis trabajos del ciclo, un proyecto web adicional y el documento de diseño detrás de este portfolio.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#proyectos" class="btn btn-accent">Ver proyectos</a>
+              <a href="diseno.html" class="btn btn-outline-custom">Leer documento de diseño</a>
+              <a href="https://github.com/Criyer" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom">GitHub (@Criyer)</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="surface-card p-4">
+              <p class="font-mono-code small text-secondary-custom mb-2">// Estado actual</p>
+              <h2 class="h5 fw-bold mb-3">Disponible para prácticas y colaboraciones</h2>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-3 text-secondary-custom small">
+                <li><strong class="text-primary-emphasis">Enfoque:</strong> Maquetación semántica, UI responsive y accesibilidad.</li>
+                <li><strong class="text-primary-emphasis">Framework CSS:</strong> Bootstrap 5 con tema propio y variables CSS.</li>
+                <li><strong class="text-primary-emphasis">Repositorio:</strong> <span class="font-mono-code">Criyer.github.io</span></li>
+              </ul>
+              <a href="#contacto" class="link-info text-decoration-none font-mono-code small">Ir a contacto →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section-block section-alt">
+      <div class="container">
+        <div class="row gy-4 align-items-start">
+          <div class="col-lg-5">
+            <p class="font-mono-code accent-text small mb-1">01 · SOBRE MÍ</p>
+            <h2 class="section-title mb-3">Diseño con intención y código limpio</h2>
+            <p class="text-secondary-custom">
+              Me llamo <strong>Cristian Blanco</strong> y entiendo el diseño de interfaces como el punto de encuentro entre una idea clara y un usuario que necesita resolver algo sin fricciones.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="surface-card p-4 p-md-5">
+              <p class="mb-3">
+                Durante el módulo de <strong>Diseño de Interfaces Web</strong> he trabajado cómo estructurar pantallas desde el boceto hasta el navegador, cuidando la jerarquía tipográfica, el contraste, el comportamiento en distintos tamaños de pantalla y la mantenibilidad del código HTML y CSS.
+              </p>
+              <p class="mb-0 text-secondary-custom">
+                No me conformo con que una interfaz «parezca bonita» en una sola resolución: reviso cómo responde en móvil (360 px), tableta (768 px) y escritorio (1280 px), evito desbordamientos horizontales y documento cada decisión en mi <a href="diseno.html" class="accent-text">documento de diseño</a> para que cualquiera pueda entender el porqué de cada elección.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section-block">
+      <div class="container">
+        <div class="row mb-4 align-items-end gy-2">
+          <div class="col-lg-8">
+            <p class="font-mono-code accent-text small mb-1">02 · PROYECTOS</p>
+            <h2 class="section-title mb-0">Trabajos del ciclo y nuevo proyecto web</h2>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <span class="font-mono-code small text-secondary-custom">3 del ciclo + 1 proyecto nuevo</span>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="card surface-card project-card h-100">
+              <div class="project-img-wrap">
+                <img src="img/proyecto-web-adaptable.svg" alt="Captura del proyecto Web Adaptable del Tema 05" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="font-mono-code small text-secondary-custom">Tema 05 · Ciclo</span>
+                  <span class="tech-badge">Web Adaptable</span>
+                </div>
+                <h3 class="h5 fw-bold">Portal Editorial Adaptable</h3>
+                <p class="text-secondary-custom small flex-grow-1">
+                  Sitio web adaptable enfocado en la lectura cómoda en móvil, tableta y escritorio, aplicando diseño mobile-first, rejilla flexible y optimización visual.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">Responsive</span>
+                </div>
+                <div class="d-flex gap-3 font-mono-code small">
+                  <a href="https://github.com/Criyer" target="_blank" rel="noopener noreferrer" class="accent-text text-decoration-none">Repositorio / Demo →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="card surface-card project-card h-100">
+              <div class="project-img-wrap">
+                <img src="img/proyecto-landing-producto.svg" alt="Captura del proyecto Landing y UI Kit del Tema 03" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="font-mono-code small text-secondary-custom">Tema 03 · Ciclo</span>
+                  <span class="tech-badge">UI / Guías de estilo</span>
+                </div>
+                <h3 class="h5 fw-bold">Landing de Producto y Guía de Componentes</h3>
+                <p class="text-secondary-custom small flex-grow-1">
+                  Maquetación de una página de aterrizaje con coherencia cromática, jerarquía visual, botones y tarjetas reutilizables pensadas para conversión y claridad.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS Variables</span>
+                  <span class="tech-badge">UI Design</span>
+                </div>
+                <div class="d-flex gap-3 font-mono-code small">
+                  <a href="https://github.com/Criyer" target="_blank" rel="noopener noreferrer" class="accent-text text-decoration-none">Repositorio / Demo →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="card surface-card project-card h-100">
+              <div class="project-img-wrap">
+                <img src="img/proyecto-catalogo-interactivo.svg" alt="Captura del proyecto Catálogo Interactivo del Tema 04" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="font-mono-code small text-secondary-custom">Tema 04 · Ciclo</span>
+                  <span class="tech-badge">Interacción</span>
+                </div>
+                <h3 class="h5 fw-bold">Catálogo Visual con Filtros y Estados</h3>
+                <p class="text-secondary-custom small flex-grow-1">
+                  Interfaz de catálogo estructurada con estados visuales claros, navegación intuitiva y componentes preparados para distintos anchos de pantalla.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS Grid / Flex</span>
+                  <span class="tech-badge">JavaScript</span>
+                </div>
+                <div class="d-flex gap-3 font-mono-code small">
+                  <a href="https://github.com/Criyer" target="_blank" rel="noopener noreferrer" class="accent-text text-decoration-none">Repositorio / Demo →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="card surface-card project-card h-100">
+              <div class="project-img-wrap">
+                <img src="img/proyecto-nuevo-taskflow.svg" alt="Captura de TaskFlow Studio, nuevo proyecto web de Cristian Blanco" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="font-mono-code small text-secondary-custom">Proyecto propio · Nuevo</span>
+                  <span class="tech-badge badge-nuevo">Nuevo proyecto web</span>
+                </div>
+                <h3 class="h5 fw-bold">TaskFlow Studio — Tablero de Tareas y Enfoque</h3>
+                <p class="text-secondary-custom small flex-grow-1">
+                  Aplicación web diseñada por iniciativa propia para organizar tareas por prioridad y trabajar con bloques de concentración, con estética limpia y adaptable.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="tech-badge">Bootstrap 5</span>
+                  <span class="tech-badge">CSS Custom Props</span>
+                  <span class="tech-badge">JavaScript</span>
+                </div>
+                <div class="d-flex gap-3 font-mono-code small">
+                  <a href="https://github.com/Criyer" target="_blank" rel="noopener noreferrer" class="accent-text text-decoration-none">Ver en GitHub →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section-block section-alt">
+      <div class="container">
+        <div class="mb-4">
+          <p class="font-mono-code accent-text small mb-1">03 · HABILIDADES</p>
+          <h2 class="section-title mb-0">Herramientas y enfoque de trabajo</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="surface-card p-4 h-100">
+              <h3 class="h6 font-mono-code accent-text text-uppercase mb-3">Maquetación y Estilos</h3>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0 text-secondary-custom small">
+                <li>• HTML5 semántico y accesible</li>
+                <li>• CSS3 moderno (Flexbox, Grid, <code>clamp()</code>)</li>
+                <li>• Bootstrap 5 con personalización de tema</li>
+                <li>• Diseño responsive mobile-first</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="surface-card p-4 h-100">
+              <h3 class="h6 font-mono-code accent-text text-uppercase mb-3">Interactividad y Flujo</h3>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0 text-secondary-custom small">
+                <li>• JavaScript para estados de UI y temas</li>
+                <li>• Git y GitHub (repositorios y GitHub Pages)</li>
+                <li>• Inspección responsive y depuración en navegador</li>
+                <li>• Código comentado y estructurado</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="surface-card p-4 h-100">
+              <h3 class="h6 font-mono-code accent-text text-uppercase mb-3">Criterio de Diseño</h3>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0 text-secondary-custom small">
+                <li>• Jerarquía visual y legibilidad</li>
+                <li>• Contraste cromático y modo claro/oscuro</li>
+                <li>• Documentación de decisiones de diseño</li>
+                <li>• Mejora continua tras la entrega</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-block">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <p class="font-mono-code accent-text small mb-1">04 · CONTACTO</p>
+            <h2 class="section-title mb-3">Hablemos</h2>
+            <p class="text-secondary-custom mb-4">
+              Si buscas una persona comprometida con el diseño de interfaces y el desarrollo web para prácticas, proyectos o equipo, puedes escribirme o revisar mis perfiles públicos.
+            </p>
+            <div class="d-flex flex-column gap-2 font-mono-code small">
+              <a href="https://github.com/Criyer" target="_blank" rel="noopener noreferrer" class="accent-text text-decoration-none">GitHub: github.com/Criyer</a>
+              <a href="diseno.html" class="text-secondary-custom text-decoration-none">Documento de diseño: diseno.html</a>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="surface-card p-4 p-md-5">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="contactName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control bg-transparent text-reset border-secondary" id="contactName" placeholder="Tu nombre" required>
+                    <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="contactEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control bg-transparent text-reset border-secondary" id="contactEmail" placeholder="nombre@empresa.com" required>
+                    <div class="invalid-feedback">Introduce un correo válido.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label">Mensaje</label>
+                    <textarea class="form-control bg-transparent text-reset border-secondary" id="contactMessage" rows="4" placeholder="Cuéntame sobre tu proyecto, oferta de prácticas o consulta..." required></textarea>
+                    <div class="invalid-feedback">Escribe un breve mensaje.</div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-accent">Enviar mensaje</button>
+                  </div>
+                </div>
+                <div id="contactFeedback" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 border-top section-alt">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 small text-secondary-custom">
+      <span>© <span id="currentYear">2026</span> Cristian Blanco (@Criyer) · Diseño de Interfaces Web</span>
+      <div class="d-flex gap-3">
+        <a href="diseno.html" class="text-reset text-decoration-none">Documento de diseño</a>
+        <a href="404.html" class="text-reset text-decoration-none">Página 404</a>
+        <a href="https://github.com/Criyer" target="_blank" rel="noopener noreferrer" class="text-reset text-decoration-none">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

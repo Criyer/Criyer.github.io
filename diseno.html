@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento de Diseño · Cristian Blanco (@Criyer)</title>
+  <meta name="description" content="Memoria y documento de diseño del portfolio de Cristian Blanco: planteamiento, arquitectura visual, elección de Bootstrap 5, análisis de 3 portfolios reales y diferenciación.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    .wireframe-box {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      background-color: var(--bg-body);
+      border: 1px dashed var(--border-strong);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      overflow-x: auto;
+      white-space: pre;
+      color: var(--text-secondary);
+    }
+    .swatch {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border-subtle);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top portfolio-navbar" aria-label="Navegación del documento de diseño">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="font-mono-code accent-text">&lt;CB /&gt;</span>
+          <span>Cristian Blanco</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDoc" aria-controls="navbarDoc" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDoc">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 my-3 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Volver al portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#planteamiento">1. Planteamiento</a></li>
+            <li class="nav-item"><a class="nav-link" href="#diseno">2. Diseño y técnica</a></li>
+            <li class="nav-item"><a class="nav-link" href="#referentes">3. 3 portfolios reales</a></li>
+            <li class="nav-item"><a class="nav-link" href="#diferenciacion">4. Diferenciación e IA</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button id="themeToggle" type="button" class="btn btn-sm btn-outline-custom" aria-pressed="false">
+                <span id="themeToggleIcon" aria-hidden="true">☀️</span>
+                <span id="themeToggleLabel">Modo claro</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="hero-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="font-mono-code accent-text small mb-2">TEMA 06 · DOCUMENTO DE DISEÑO Y MEMORIA</p>
+          <h1 class="hero-title mb-3">Documento de diseño: Portfolio de Cristian Blanco (@Criyer)</h1>
+          <p class="lead-custom mb-5">
+            Este documento recoge el proceso completo detrás de mi portfolio en <code>Criyer.github.io</code>: qué problema resuelve, a quién está dirigido, cómo se ha estructurado visual y técnicamente, qué he aprendido al analizar portfolios de profesionales del sector y qué aporta de distinto frente a plantillas genéricas.
+          </p>
+
+          <section id="planteamiento" class="surface-card p-4 p-md-5 mb-4">
+            <h2 class="section-title h2 mb-3">1. Cómo pensé que iba a ser el portfolio</h2>
+            <h3 class="h5 fw-bold accent-text mt-3">A quién va dirigido</h3>
+            <p>
+              El portfolio está pensado principalmente para <strong>responsables de selección (RR. HH. y recruiters)</strong>, <strong>leads o desarrolladores sénior</strong> que revisan pruebas o candidaturas junior/de prácticas, y <strong>compañeros o docentes</strong> que evalúan la solidez del trabajo realizado en el ciclo.
+            </p>
+            <p>
+              Un reclutador o revisor técnico suele disponer de poco tiempo en una primera pasada. Por ello, decidí que el portfolio no debía ser una galería de adornos difíciles de leer, sino una carta de presentación directa donde en menos de un minuto quede claro: quién es Cristian Blanco, qué sabe construir, cómo se adaptan sus interfaces y dónde ver el código.
+            </p>
+
+            <h3 class="h5 fw-bold accent-text mt-4">Qué quiero transmitir</h3>
+            <p>
+              Quiero transmitir <strong>claridad, criterio técnico y honestidad profesional</strong>. Como perfil en formación/inicio de carrera, no pretendo aparentar diez años de experiencia ni llenar la página de métricas inventadas; prefiero mostrar criterio real en la estructura, cuidado en el detalle (como la tipografía fluida, la navegación sin saltos y el modo claro/oscuro) y transparencia sobre cómo evolucionan mis proyectos.
+            </p>
+          </section>
+
+          <section id="diseno" class="surface-card p-4 p-md-5 mb-4">
+            <h2 class="section-title h2 mb-3">2. Cómo lo he diseñado y construido</h2>
+            <h3 class="h5 fw-bold accent-text mt-3">Por qué elegí Bootstrap 5 frente a Tailwind (y cómo evité el aspecto por defecto)</h3>
+            <p>
+              Elegí <strong>Bootstrap 5</strong> como único framework CSS porque ofrece un sistema de rejilla (<code>container</code>, <code>row</code>, <code>col-*</code>) y componentes de navegación/colapso muy estables y rápidos de auditar en distintos anchos de pantalla (360 px, 768 px y 1280 px). Frente a Tailwind, donde a veces las clases utilitarias largas pueden dificultar la lectura rápida en HTML cuando se empieza, combinar una rejilla sólida con una hoja propia (<code>css/estilos.css</code>) me permite mantener un HTML limpio y centralizar la identidad visual.
+            </p>
+            <p>
+              Para evitar el aspecto «por defecto» típico de Bootstrap, definí variables semánticas propias en <code>:root</code> y <code>[data-theme="light"]</code>, ajusté bordes, sombras y fondos oscuros/claros, y apliqué escalado tipográfico fluido con <code>clamp()</code>.
+            </p>
+
+            <h3 class="h5 fw-bold accent-text mt-4">Paleta de colores y tipografía</h3>
+            <div class="row g-3 my-2">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded border border-secondary-subtle">
+                  <div class="swatch" style="background:#0b1120;"></div>
+                  <div>
+                    <div class="fw-bold small">Fondo oscuro principal (#0b1120)</div>
+                    <div class="font-mono-code small text-secondary-custom">Reduce fatiga visual y resalta superficies</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded border border-secondary-subtle">
+                  <div class="swatch" style="background:#38bdf8;"></div>
+                  <div>
+                    <div class="fw-bold small">Acento primario cian (#38bdf8)</div>
+                    <div class="font-mono-code small text-secondary-custom">Enlaces clave, etiquetas y foco interactivo</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded border border-secondary-subtle">
+                  <div class="swatch" style="background:#fbbf24;"></div>
+                  <div>
+                    <div class="fw-bold small">Acento secundario ámbar (#fbbf24)</div>
+                    <div class="font-mono-code small text-secondary-custom">Destacado para el proyecto web nuevo</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded border border-secondary-subtle">
+                  <div class="swatch" style="background:#f8fafc;"></div>
+                  <div>
+                    <div class="fw-bold small">Modo claro (#f8fafc / #ffffff)</div>
+                    <div class="font-mono-code small text-secondary-custom">Alternativa de alto contraste conmutables</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3">
+              En tipografía combino <strong>Plus Jakarta Sans</strong> (geométrica, legible y moderna para titulares y párrafos) con <strong>JetBrains Mono</strong> para identificadores de sección, etiquetas tecnológicas y referencias de código.
+            </p>
+
+            <h3 class="h5 fw-bold accent-text mt-4">Estructura de secciones y wireframes</h3>
+            <p>
+              El flujo de <code>index.html</code> sigue un orden narrativo lógico: <strong>Inicio</strong> (propuesta de valor y accesos directos) → <strong>Sobre mí</strong> (enfoque y evolución) → <strong>Proyectos</strong> (3 trabajos del ciclo + 1 proyecto web nuevo) → <strong>Habilidades</strong> → <strong>Contacto</strong>, además de <code>diseno.html</code> y <code>404.html</code>.
+            </p>
+            <div class="wireframe-box" aria-label="Boceto esquemático de estructura en escritorio y móvil">ESCRITORIO (1280px)                          MÓVIL (360px)
++-----------------------------------------+   +-------------------+
+| [CB]  Inicio Sobre mí Proyectos ... [☀] |   | [CB]          [☰] |
++-----------------------------------------+   +-------------------+
+| Titular principal (clamp)   | Tarjeta |   | Titular (clamp)   |
+| Subtítulo y CTAs            | estado  |   | CTAs apilados     |
++-----------------------------------------+   +-------------------+
+| Sobre mí (2 columnas: título + texto)   |   | Tarjeta estado    |
++-----------------------------------------+   +-------------------+
+| Proyectos (rejilla 2x2: 3 ciclo + 1 web)|   | Proyectos (1 col) |
++-----------------------------------------+   +-------------------+
+| Habilidades (3 cols) | Contacto (2 col) |   | Habilidades/Cont. |
++-----------------------------------------+   +-------------------+</div>
+          </section>
+
+          <section id="referentes" class="surface-card p-4 p-md-5 mb-4">
+            <h2 class="section-title h2 mb-3">3. Análisis de 3 portfolios reales del sector</h2>
+            <h3 class="h5 fw-bold accent-text mt-3">1) Brittany Chiang (brittanychiang.com)</h3>
+            <p>
+              <strong>Qué me gusta:</strong> Su organización editorial limpia, el uso de un tema oscuro muy bien equilibrado y la forma en que conecta cada proyecto con las tecnologías utilizadas y la experiencia real.
+            </p>
+            <p>
+              <strong>Qué no me convence tanto o resulta exigente para un perfil junior:</strong> Una estructura de dos columnas fijas en escritorio puede sentirse densa si no se tiene mucho historial previo, y en ocasiones requiere más scroll para llegar a detalles concretos.
+            </p>
+
+            <h3 class="h5 fw-bold accent-text mt-4">2) Josh W. Comeau (joshwcomeau.com)</h3>
+            <p>
+              <strong>Qué me gusta:</strong> Su identidad visual tan reconocible, el cuidado de la microinteracción y la claridad didáctica al explicar conceptos de CSS y diseño de interfaces.
+            </p>
+            <p>
+              <strong>Qué no me convence tanto:</strong> El nivel de detalle de animaciones e ilustraciones propias es fruto de años de dedicación y experimentación; copiar ese estilo sin base sólida puede distraer del contenido principal.
+            </p>
+
+            <h3 class="h5 fw-bold accent-text mt-4">3) Paco Coursey (paco.me)</h3>
+            <p>
+              <strong>Qué me gusta:</strong> La sobriedad, el respeto por el espacio en blanco y la sensación de ligereza y rapidez al navegar entre notas, proyectos y escritos.
+            </p>
+            <p>
+              <strong>Qué no me convence tanto:</strong> Su estética minimalista extrema puede resultar demasiado austera para quien busca ver capturas visuales o resúmenes rápidos de proyectos en una primera ojeada.
+            </p>
+          </section>
+
+          <section id="diferenciacion" class="surface-card p-4 p-md-5">
+            <h2 class="section-title h2 mb-3">4. En qué me diferencio y transparencia sobre el uso de IA</h2>
+            <p>
+              Lo que diferencia a este portfolio de muchos otros portfolios de clase es la <strong>coherencia entre lo que muestro y cómo lo justifico</strong>: combino proyectos reales del ciclo (incluida la web adaptable del Tema 05) con un proyecto web adicional (<em>TaskFlow Studio</em>), incluyo un documento de diseño extenso y crítico, ofrezco modo claro/oscuro real con persistencia en <code>localStorage</code> y explico en los comentarios del código por qué tomo cada decisión.
+            </p>
+            <p class="mb-0">
+              <strong>Uso de Inteligencia Artificial:</strong> Se ha utilizado IA como apoyo para estructurar ideas, redactar borradores de documentación y revisar detalles de maquetación y código, mientras que la selección de proyectos, la adaptación a mi perfil (<code>@Criyer</code>), la revisión responsive y la validación final corresponden a mi trabajo como autor.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 border-top section-alt">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 small text-secondary-custom">
+      <span>Cristian Blanco (@Criyer) · Documento de diseño</span>
+      <a href="index.html" class="accent-text text-decoration-none">Volver a index.html →</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
